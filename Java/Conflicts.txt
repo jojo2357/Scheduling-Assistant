@@ -1,0 +1,65 @@
+Best solution found for JOSE
+0: PSYCH
+1: PHYSICS
+2: HISTORY
+3: ENGLISH
+4: COMPSCI
+5: SPANISH
+6: MATH
+
+Best solution found for DINA (1)
+0: FRENCH
+1: MATH
+2: CHEM
+2: HISTORY
+3: ENGLISH
+4: COMPSCI
+5: FREE
+6: FREE
+
+Best solution found for RYAN
+0: SPANISH
+1: MATH
+2: HISTORY
+3: ENGLISH
+4: COMPSCI
+5: FREE
+6: FREE
+
+Best solution found for RYAAAAN
+0: SPANISH
+1: PHYSICS
+2: HISTORY
+3: ENGLISH
+4: BIO
+5: FREE
+6: MATH
+
+Best solution found for TAYLOR (1)
+0: SPANISH
+1: PHYSICS
+2: CHEM
+2: HISTORY
+3: ENGLISH
+4: FREE
+5: FREE
+6: MATH
+
+Best solution found for JUULIA
+0: PSYCH
+1: MATH
+2: HISTORY
+3: ENGLISH
+4: FRENCH
+5: BIO
+6: FREE
+
+Best solution found for NICK
+0: PSYCH
+1: MATH
+2: HISTORY
+3: ENGLISH
+4: SPANISH
+5: BIO
+6: FREE
+

@@ -1,0 +1,10 @@
+For ClassChances.txt:
+
+Input every class in a form such that it matches something like the following:
+
+*Class name*, 1st offered period, 2nd offered //... etc.
+*Class name*,  //computer will assume it is offered 0-6. Remember to include a space after the comma or it will think the class has a comma at the end
+
+For Schedules.txt:
+
+Input every student, course request, course, course

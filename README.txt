@@ -1,0 +1,3 @@
+In my AP CS A class, I was feeling a bit bored of coding Desktop boats (its on my github) and project euler, so I asked my teacher if she had a coding challenge for me. She said that a while ago, she had asked some students to do something and they said it was impossible. I was up for the challenge so it couldnt hurt to hear it. She explained that in creating a class schedule for IB kids at the school, it takes forever to figure out what classes should be offered what periods, and above all it is exhausting! I set to work in my primary (at the time) language. The other day, I was reminded of this project and so I used my newly aquired java skills to translate and improve the schedule making. 
+
+Thank you Dina ;)

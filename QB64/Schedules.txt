@@ -1,0 +1,7 @@
+Jose, Math, english, spanish, compsci, history, psych, physics
+Dina, math, english, french, compsci, history, chem
+Ryan, math, english, spanish, history, compsci
+Ryaaaan, math, english, history, spanish, bio, physics
+Taylor, math, english, history, spanish, physics, chem
+Juulia, Math, english, history, french, psych, bio
+Nick, math, english, history, spanish, psych, bio
