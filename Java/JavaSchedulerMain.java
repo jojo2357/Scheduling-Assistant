@@ -25,12 +25,12 @@ public class JavaSchedulerMain {
         * GATHER CLASSES AND CLASS PERIODS
         */
         do{
-            String[] dataIn = classInputReader.nextLine().toUpperCase().split(", ");
+            String[] dataIn = classInputReader.nextLine().toUpperCase().split(",");
             if (dataIn.length == 0){
                 onFileReadError(classesFound);
                 return;
             }
-            Class classBuilder = new Class(dataIn[0], dataIn);
+            Class classBuilder = new Class(dataIn[0].trim(), dataIn);
             classes.add(classBuilder);
             classesFound++;
         }while (classInputReader.hasNextLine());
@@ -46,7 +46,7 @@ public class JavaSchedulerMain {
         * GATHER STUDENT AND CLASS REQUESTS
         */
         do{
-            String[] dataIn = studentDataReader.nextLine().toUpperCase().split(", ");
+            String[] dataIn = studentDataReader.nextLine().toUpperCase().split(",");
             if (dataIn.length == 0){
                 onFileReadError(classesFound);
                 return;
@@ -58,7 +58,7 @@ public class JavaSchedulerMain {
             */
             for (int i = 1; i < dataIn.length; i++){
                 for (Class klass : classes){
-                    if (klass.toString().equals(dataIn[i])){
+                    if (klass.toString().equals(dataIn[i].trim())){
                         classBuilder.add(klass);
                         break;
                     }
@@ -173,52 +173,5 @@ public class JavaSchedulerMain {
 
     private static void onInputNotFound() {
         System.out.println(System.getProperty("user.dir") + File.separator + "  an essential file could not be found in this directory");
-    }
-}
-
-class Class{
-
-    public Boolean singlePeriod = false;
-    public ArrayList<Byte> periodsOffered = new ArrayList<Byte>();
-    private String name;
-
-    public Class (String name, String[] offered){
-        if (offered.length > 1){
-            for (Byte i = (byte)(offered.length - 1); i > 0; i--)
-                periodsOffered.add((byte)Integer.parseInt(offered[i]));
-        }else{
-            for (Byte i = 6; i >= 0; i--)
-                periodsOffered.add(i);
-        }
-        this.name = name;
-        if (periodsOffered.size() == 1) singlePeriod = true;
-    }
-
-    public String toString(){
-        return this.name;
-    }
-}
-
-class Student{
-
-    private String name;
-    public ArrayList<Class> classRequests = new ArrayList<Class>();
-
-    public Student (String name, ArrayList<Class> requests){
-        this.name = name;
-        for (Byte i = (byte)(requests.size() - 1); i >= 0; i--)
-            this.classRequests.add(requests.get(i));
-    }
-
-    public String getName(){
-        return this.name;
-    }
-
-    public int classesRequested(){
-        return this.classRequests.size();
-    }
-
-    public String toString(){
-        return this.name;
     }
 }
